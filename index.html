@@ -11,13 +11,25 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
+ 
       <a-marker preset="hiro">
         <a-text
-          value="This is a component. Plug it into slot A."
-          color="red"
+          value="This is component C. \nConnect it to D."
+          color="blue"
           position="0 0.5 0"
         ></a-text>
       </a-marker>
+
+
+      <a-marker type='pattern' url='pattern-marker.patt'>
+        <a-link
+        href="https://www.youtube.com"
+        title="Watch how to on YouTube"
+        position="0 1 0"
+      ></a-link>
+      </a-marker>
+    
+
       <a-entity camera></a-entity>
     </a-scene>
   </body>
